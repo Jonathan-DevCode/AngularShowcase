@@ -1,0 +1,18 @@
+
+<div class="container">
+    <div class="card mt-5">
+        <div class="card-header"> <h3> Injeção de dependência (provided) </h3></div>
+        <div class="card-body">
+            <p> 
+                Ao criar um service atráves do angular cli, automaticamente ele faz a inserção do atributo
+                "providedIn: root" dentro do decorator Injectable, tornando global o escopo desse serviço sem
+                precisar importa-lo no módulo raiz do projeto
+            </p>
+            
+            <ul *ngFor="let data of arrayData">
+                <li> {{ data }} </li>
+            </ul>
+            
+        </div>
+    </div>
+</div>

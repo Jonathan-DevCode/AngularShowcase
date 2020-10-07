@@ -1,0 +1,25 @@
+.floatingBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#description {
+    display: none;
+}
+
+#options {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 35px;
+    transition: 300ms;
+}
+
+#options:hover {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#options:hover #description {
+    display: inline;
+}

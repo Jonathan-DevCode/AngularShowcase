@@ -1,0 +1,17 @@
+
+<div class="container">
+    <div class="card mt-5">
+        <div class="card-header"> <h3> Injeção de dependência sem Angular-CLI </h3></div>
+        <div class="card-body">
+            <p>
+                Ao fazer a inserção do service de forma manual podemos tornar-lo de escopo local ao módulo onde for 
+                importado, limitando seu acesso a demais áreas da aplicação. Ao fazer isso, se o componente for carregado
+                em lazyloading o service também será.
+            </p>
+            <ul *ngFor="let data of arrayData">
+                <li> {{ data }} </li>
+            </ul>
+            
+        </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+
+#whoIAm {
+    position: fixed;
+    top: 18px;
+    left: 0;
+    margin: 30px;
+    width: 300px;
+}
+
+#setBackground {
+    background-image: url("./../../assets/autumn.jpg");
+    background-size: 300px;
+}
+
+#me {
+    position: relative;
+    top: 50px;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 50px;
+    border-style: solid;
+    border-color: var(--light);
+    border-width: 5px 5px 0 5px;
+}

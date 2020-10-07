@@ -1,0 +1,19 @@
+<p> 
+    Basta com adicionar o método "static" ao evento emissor para que possa ser acessado sem precisar instanciar sua classe, evitando
+    gerar uma instancia para cada componente que a usasse, o que faria com que se escutasse apenas as mudanças nos dados que fossem geradas
+    dentro de quem a inicializou.
+</p>
+
+<label class="ml-4"> Adicione algo ao Array </label>
+<input 
+    type="text" class="form-control"
+    placeholder="Escreva aqui:" 
+    (keypress)="($event.keyCode == 13) ? pushArray($event.target.value) : 'keep'"
+>
+
+<div class="border mt-3">
+    <p class="ml-2"> Componente 1 </p>
+    <ul *ngFor="let data of communication">
+        <li> {{ data }}</li>
+    </ul>
+</div>
